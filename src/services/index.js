@@ -17,19 +17,7 @@ Service.interceptors.request.use((request) => {
    }
    return request;
 });
-Service.interceptors.response.use(
-    (response) => {
-        console.log('Interceptor', response);
-        return response;
-    },
-    (error) => {
-        if(error.response.status == 401){
-            Auth.logout();
-            $router.go();
-        }
-        //console.error('Interceptor', error.response)
-    }
-);
+
 
 
 let Posts = {    
