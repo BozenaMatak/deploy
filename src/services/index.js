@@ -3,7 +3,7 @@ import $router from '@/router';
 
 
 let Service = axios.create({     
-    baseURL: 'https://wfhbackend.herokuapp.com/',  
+    baseURL: 'https://wfhbackend.herokuapp.com',  
     timeout: 1000,
 
 });
